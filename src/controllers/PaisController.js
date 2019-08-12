@@ -1,18 +1,19 @@
-const Pais = require('../models/Pais')
-
+const PaisModel = require('../models/PaisModel')
+const converter = require('../util/transformCsvToJson')
 module.exports={
     index(require,response){
         console.log(require.body)
-        return response.json({ok:"abc"})
+        return response.json({ok:"abc"})    
     },
     async store(require,response){
-        const {name,comida,bebida} = require.body
-        const pais =  await Pais.create({
-            name,
-            bebida,
-            comida,
+        const {Pais,Comida,Bebida} = require.body
+        console.log(Pais,Comida,Bebida)
+        const pais =  await PaisModel.create({
+            Pais,
+            Bebida,
+            Comida
         })
         console.log(pais)
-        return response.json({ok:`${name} foi salvo com sucesso`})
+        return response.json({ok:`${Pais} foi salvo com sucesso`})
     }
 }
