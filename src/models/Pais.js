@@ -5,14 +5,14 @@ const PaisSchema = new Schema({
         type:String,
         require:true
     },
+    bebida:{
+        type:String,
+        require:true
+    },
     comida:{
         type:String,
         require:true      
     },
-    bedida:{
-        type:String,
-        require:true
-    }
 })
 
-module.exports = model('Pais',FraseSchema)
+module.exports = model('Pais',PaisSchema)
