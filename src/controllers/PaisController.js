@@ -1,5 +1,5 @@
 const PaisModel = require('../models/PaisModel')
-const converter = require('../util/transformCsvToJson')
+const converter = require('../utils/transformCsvToJson')
 module.exports={
     index(require,response){
         console.log(require.body)

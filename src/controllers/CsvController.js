@@ -1,4 +1,4 @@
-const converter = require('../util/transformCsvToJson')
+const converter = require('../utils/transformCsvToJson')
 const axios = require('axios')
 module.exports ={
     async store(req,res){
