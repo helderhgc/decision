@@ -1,18 +1,18 @@
 const {Schema,model} = require('mongoose')
 
 const PaisSchema = new Schema({
-    name:{
+    Pais:{
         type:String,
         require:true
     },
-    bebida:{
+    Bebida:{
         type:String,
         require:true
     },
-    comida:{
+    Comida:{
         type:String,
         require:true      
     },
 })
 
-module.exports = model('Pais',PaisSchema)
+module.exports = model('PaisModel',PaisSchema)
