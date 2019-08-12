@@ -1,15 +1,91 @@
 const {Schema,model} = require('mongoose')
 
 const PaisSchema = new Schema({
-    Pais:{
+    Name:{
         type:String,
         require:true
     },
-    Bebida:{
+    Sufficient_Food:{
         type:String,
         require:true
     },
-    Comida:{
+    Sufficient_to_Drink:{
+        type:String,
+        require:true      
+    },
+    Safe_Sanitation:{
+        type:String,
+        require:true      
+    },
+    Education:{
+        type:String,
+        require:true      
+    },  
+    Healthy_Life:{
+        type:String,
+        require:true      
+    },
+    Gender_Equality:{
+        type:String,
+        require:true      
+    },
+    Income_Distribution:{
+        type:String,
+        require:true      
+    },
+    Population_Growth:{
+        type:String,
+        require:true      
+    },
+    Good_Governance:{
+        type:String,
+        require:true      
+    },
+    Biodiversity:{
+        type:String,
+        require:true      
+    },
+    Renewable_Water_Resources:{
+        type:String,
+        require:true      
+    },
+    Consumption:{
+        type:String,
+        require:true      
+    },
+    Energy_Use:{
+        type:String,
+        require:true      
+    },
+    Energy_Savings:{
+        type:String,
+        require:true      
+    },
+    Greenhouse_Gases:{
+        type:String,
+        require:true      
+    },
+    Renewable_Energy:{
+        type:String,
+        require:true      
+    },
+    Organic_Farming:{
+        type:String,
+        require:true      
+    },
+    Genuine_Savings:{
+        type:String,
+        require:true      
+    },
+    GDP:{
+        type:String,
+        require:true      
+    },
+    Employment:{
+        type:String,
+        require:true      
+    },
+    Public_Debt:{
         type:String,
         require:true      
     },
