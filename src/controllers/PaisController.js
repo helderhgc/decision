@@ -1,8 +1,8 @@
 
 
 module.exports={
-    index(require,respose){
-        console.log(json(require.body))
-        return respons.json({ok:"true"})
+    index(require,response){
+        console.log(require.body)
+        return response.json({ok:"true"})
     }
 }
