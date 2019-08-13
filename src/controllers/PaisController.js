@@ -1,9 +1,14 @@
 const PaisModel = require('../models/PaisModel')
-const converter = require('../utils/transformCsvToJson')
 module.exports={
-    index(require,response){
-        console.log(require.body)
-        return response.json({ok:"abc"})    
+    async index(require,response){
+        const {criteria,order} = require.headers
+        const mySort = {[criteria] : order}
+        console.log(mySort)
+        const returnOfBd = await PaisModel.find().sort(mySort)
+        //console.log(returnOfBd)
+        return response.json({TodosOsPaises:returnOfBd})    
+        return response.json({ok:"true"})    
+
     },
     async store(require,response){
         const {
